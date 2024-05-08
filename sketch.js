@@ -60,8 +60,7 @@ function draw() {
   imageMode(CENTER);
 
   image(bg,width/2, height/2)
- fill(0)
-  text(mouseX + "," + mouseY, 50, 50)
+
  
   //me
   
