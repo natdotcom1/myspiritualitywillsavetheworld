@@ -1,5 +1,7 @@
 let bg;
 
+let adam;
+
 //guys
 let unloaded;
 let shock;
@@ -24,10 +26,17 @@ let hotb;
 let puter;
 let zak;
 
+function preload(){
+  soundFormats('mp3')
+  bg = loadImage("pics/bg.jpg")
+  adam = createAudio('adameve.mp3')
+
+}
+
 function setup() {
   createCanvas(1280, 700);
+  adam.play()
   
-  bg = loadImage("pics/bg.jpg")
   
   //guys
   unloaded = loadImage("pics/unloaded.png")
@@ -54,14 +63,15 @@ function setup() {
   puter = loadImage("text/textputer.png")
   zak = loadImage("text/textzak.png")
   
+  
 }
 
 function draw() {
+  
   imageMode(CENTER);
 
   image(bg,width/2, height/2)
 
- 
   //me
   
   image(drk, 900, 170, 200, 300)
